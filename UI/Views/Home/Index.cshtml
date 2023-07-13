@@ -1,0 +1,12 @@
+﻿@model UI.Utils.Results.DataResult<string>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <a href="/?culture=tr-TR">TR</a>
+    <a href="/?culture=en-US">EN</a>
+    <h1 class="display-4">Static HTML text: @Localization.GetValue("home.test")</h1>
+    <h1 class="display-4">Data from API: @Model.Data</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
